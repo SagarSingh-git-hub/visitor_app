@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+<div class="top-bar">
+    <h2>Visitor Entry System</h2>
+    <div>
+        <a href="/add">+ Add Visitor</a>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Purpose</th>
+    <th>Meet</th>
+    <th>Action</th>
+    <th>Status</th>
+</tr>
+
+{% for v in visitors %}
+<tr>
+    <td>{{ v.name }}</td>
+    <td>{{ v.phone }}</td>
+    <td>{{ v.purpose }}</td>
+    <td>{{ v.meet_person }}</td>
+    <td>
+        <a class="btn btn-edit" href="/edit/{{ v.id }}">Edit</a>
+        <a class="btn btn-delete" href="/delete/{{ v.id }}">Delete</a>
+    </td>
+    <td>
+        {% if v.exit_time == None %}
+            <a class="btn btn-exit" href="/exit/{{ v.id }}">Exit</a>
+        {% else %}
+            <span class="btn btn-exited">Exited</span>
+        {% endif %}
+    </td>
+</tr>
+{% endfor %}
+</table>
+</div>

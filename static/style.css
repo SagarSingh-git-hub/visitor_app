@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    min-height: 100vh;
+}
+
+/* Centered card */
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar a {
+    background: #667eea;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    background: #764ba2;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background: #667eea;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f4f6ff;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-edit {
+    background: #3498db;
+    color: white;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-exit {
+    background: #f39c12;
+    color: white;
+}
+
+.btn-exited {
+    background: #2ecc71;
+    color: white;
+}
+
+/* Forms */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+/* Login box */
+.login-box {
+    max-width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}

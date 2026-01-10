@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="container">
+<h2>Edit Visitor</h2>
+<form method="post">
+Name: <input value="{{visitor.name}}" name="name">
+Phone: <input value="{{visitor.phone}}" name="phone">
+Purpose: <input value="{{visitor.purpose}}" name="purpose">
+Meet Person: <input value="{{visitor.meet_person}}" name="meet">
+<button type="submit">Update</button>
+</form>
+</div>
